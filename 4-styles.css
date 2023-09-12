@@ -1,0 +1,346 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*THIS FOR ICONS */
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('holberton_school-icon/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('holberton_school-icon/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('holberton_school-icon/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/*-----------------MATERIAL USED IN THIS PROJECT -------------------*/ 
+:root {
+	--main-color: #fff;
+	--main-bgcolor: #FF6565;
+	--para-size:  16px;
+	--font-size: 17px;
+	--font-fam: arial;
+}
+/*-------------------MAIN HEADER----------------------*/
+header{
+	background: url('./images/headerBg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	font-family: var(--font-fam);
+}
+
+.navigation-menu{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.logo img{
+	width: 80%;
+}
+
+.nav-link ul{
+	display: flex;
+	list-style: none;
+}
+
+.nav-link ul li{
+	margin: 15px;
+}
+.nav-link ul li a{
+	font-size: var(--font-size);
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+
+.nav-link ul li a:hover{
+	color: var(--main-bgcolor);
+}
+.resp-btn{
+	display: grid;
+}
+.resp-btn span{
+	font-size: 50px;
+	color: var(--main-color);
+	display: none;
+	cursor: pointer;
+}
+
+
+.head-description{
+	margin-top: 240px;
+	text-align: center;
+}
+
+.head-description h1{
+	font-family: var(--font-fam);
+	color: var(--main-color);
+	margin-bottom: 10px;
+}
+
+.head-description p{
+	font-size: var(--para-size);
+	letter-spacing: 1px;
+	color: var(--main-color);
+}
+
+.head-description button{
+	color: var(--main-color);
+	padding: 16px 25px;
+	font-size: var(--font-size);
+	border-radius: 25px;
+	border: none;
+	background: var(--main-bgcolor);
+	margin: 40px;
+	cursor: pointer;
+}
+
+.header-body{
+	text-align: center;
+	margin: 10px auto;
+	width: 40%;
+}
+
+.header-body p{
+	color: var(--main-color);
+	font-size: var(--para-size);
+	line-height: 1.4;
+}
+
+/*------------------------This styles for what we do section-------------------- */
+
+.what-we-do{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.what-we-do h1{
+	font-size: 29px;
+}
+
+.content{
+	margin: 20px auto;
+	width: 500px;
+}
+
+.box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.tools{
+	width: 200px;
+}
+
+.tools h4{
+	margin: 10px;
+	font-size: var(--font-size);
+}
+
+.tools p{
+	line-height: 1.3rem;
+}
+
+.sound-img:before{
+    content: "\e90e";
+    color: #FF6565;
+}
+
+.video-img:before{
+    content: "\e910";
+    color: #FF6565;
+}
+
+.audio-img:before{
+    content: "\e90d";
+    color: #FF6565;
+}
+
+.listener-img:before{
+    content: "\e909";
+    color: #FF6565;
+}
+.audio-img, .listener-img, .video-img, .sound-img{
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 94.2px;
+    margin-left: 56.4px;
+    margin-right: 56.4px;
+
+}
+
+
+/*---------------------Our Result styles ------------------------------*/
+
+.our-result{
+	background: url('./images/headphone.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.our-result h1{
+	color: var(--main-color);
+	padding-top: 70px;
+	padding-bottom: 20px;
+	font-size: 28px;
+}
+
+.para-res{
+	color: white;
+	line-height: 1.5;
+	margin: auto;
+	width: 600px;
+}
+
+.hexagon-box{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 60px;
+}
+
+.box-he{
+	background: url('./images/pentagone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	margin-top: 30px;
+	height: 200px;
+	padding-top: 50px;
+}
+
+.box-he span{
+	color: var(--main-color);
+	font-size: 40px;
+}
+
+.box-he p{
+	color: var(--main-color);
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+/*---------------------------------This style for Contact Us Page-------------------*/
+
+.contact{
+	padding: 20px;
+	margin: 20px;
+} 
+
+.contact h1	{
+	font-size: 32px;
+	font-family: var(--font-fam);
+}
+
+form input{
+	padding: 10px;
+	margin: 20px;
+	width: 220px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
+	font-size: 14px;
+}
+
+form button{
+	background: var(--main-bgcolor);
+	border: none;
+	font-size: 14px;
+	width: 162px;
+	height: 44px;
+	color: var(--main-color);
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+
+/*--------------------------------Footer PART -----------------------------*/
+
+footer{
+	background: #071629;
+	width: 100%;
+	height: 249px;
+}
+
+.visit-us{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+}
+
+.platform{
+	display: flex;
+	gap: 24px;
+}
+
+footer p{
+	margin-top: 80px;
+	color: var(--main-color);
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.facebook, .twetter, .instagram{
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 30px;
+}
+
+.facebook:before{
+    content: "\e908";
+    color: #FFFFFF;
+}
+.twetter:before{
+    content: "\e90f";
+    color: #FFFFFF;
+}
+.instagram:before{
+    content: "\e90a";
+    color: #FFFFFF;
+}
+
+/*---------------------------------RESPONSIVE PAGE ------------------------------------*/
+
+@media (max-width: 768px){
+	header{
+		height: 100vh;
+		width: 100%;
+	}
+	.nav-link{
+		display: none;
+	}
+	.resp-btn span{
+		display: block;
+	}
+
+	.header-body{
+		width: 90%;
+	}
+}
+
